@@ -1,7 +1,7 @@
 .field {
     --fieldInputHeight:var(--InputHeight);
-    --fieldInputTextColor: var(--color-dark)
-    --fieldInputBgColor: var(--color-light);
+    --fieldInputTextColor: var(--color-dark);
+    --fieldInputBgColor: var(--dark-alt);
     --fieldInputBorderColor: var(--color-dark);
     --fieldInputPlaceHolderColor: var(--color-gray-alt);
     --fieldInputHoverBgColor: var(--color-accent)
@@ -26,7 +26,7 @@
       --fieldInputTextColor: var(--color-accent)
       --fieldInputBgColor: var(--color-dark-alt);
       --fieldInputBorderColor: var(--color-light);
-      --fieldInputPlaceHolderColor: var(color-light);
+      --fieldInputPlaceHolderColor: var(--color-light);
       --fieldInputHoverBgColor: var(--color-dark)
     }
 
@@ -39,12 +39,12 @@
       height: var(--fieldInputHeight);
       padding-inline: 30px;
       color: var(--fieldInputTextColor);
-      background-color: --fieldInputBgColor;
+      background-color: var(--fieldInputBgColor);
       border: 1px solid var(--fieldInputBorderColor);
       border-radius: var(--border-radius);
 
       @include hover {
-        background-color: var(--fieldInputHoverBgColor);
+        background-color: var(--fieldInputBorderColor);
       }
 
       @include mobile {

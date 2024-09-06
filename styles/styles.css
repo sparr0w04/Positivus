@@ -287,8 +287,8 @@ h4, .h4 {
 
 .field {
   --fieldInputHeight:var(--InputHeight);
-  --fieldInputTextColor: var(--color-dark)
-  --fieldInputBgColor: var(--color-light);
+  --fieldInputTextColor: var(--color-dark);
+  --fieldInputBgColor: var(--dark-alt);
   --fieldInputBorderColor: var(--color-dark);
   --fieldInputPlaceHolderColor: var(--color-gray-alt);
   --fieldInputHoverBgColor: var(--color-accent)
@@ -314,7 +314,7 @@ h4, .h4 {
   --fieldInputTextColor: var(--color-accent)
   --fieldInputBgColor: var(--color-dark-alt);
   --fieldInputBorderColor: var(--color-light);
-  --fieldInputPlaceHolderColor: var(color-light);
+  --fieldInputPlaceHolderColor: var(--color-light);
   --fieldInputHoverBgColor: var(--color-dark) ;
 }
 .field__label {
@@ -325,18 +325,18 @@ h4, .h4 {
   height: var(--fieldInputHeight);
   padding-inline: 30px;
   color: var(--fieldInputTextColor);
-  background-color: --fieldInputBgColor;
+  background-color: var(--fieldInputBgColor);
   border: 1px solid var(--fieldInputBorderColor);
   border-radius: var(--border-radius);
 }
 @media (hover: hover) {
   .field__input:hover {
-    background-color: var(--fieldInputHoverBgColor);
+    background-color: var(--fieldInputBorderColor);
   }
 }
 @media (hover: none) {
   .field__input:active {
-    background-color: var(--fieldInputHoverBgColor);
+    background-color: var(--fieldInputBorderColor);
   }
 }
 @media (max-width: 767px) {
